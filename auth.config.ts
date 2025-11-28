@@ -1,5 +1,4 @@
 import type { NextAuthConfig } from "next-auth";
-
 export const authConfig = {
   pages: {
     signIn: "/sign-in",
@@ -8,31 +7,18 @@ export const authConfig = {
     strategy: "jwt",
     maxAge: 30 * 24 * 60 * 60, // 30 days
   },
-
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
-
-      const pathname = nextUrl.pathname;
-
-      // Protected routes
-      const protectedRoutes = ["/survey", "/dashboard", "/dashboard/response"];
-
-      const isProtected = protectedRoutes.some((route) =>
-        pathname.startsWith(route)
-      );
-
-      if (isProtected && !isLoggedIn) {
+      const isOnDashboardpage = nextUrl.pathname.startsWith("/dashboard");
+      const isOnSurveyPage = nextUrl.pathname.startsWith("/survey");
+      if (isOnDashboardpage || isOnSurveyPage) {
+        if (isLoggedIn) return true;
         return false;
-      }
-
-      if (!isProtected && isLoggedIn) {
+      } else if (isLoggedIn) {
         return Response.redirect(new URL("/dashboard", nextUrl));
       }
-
-      return true;
     },
   },
-
   providers: [],
 } satisfies NextAuthConfig;
