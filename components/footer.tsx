@@ -21,22 +21,22 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                <Link href="/features" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/survey" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Surveys
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Dashboard
                 </Link>
               </li>
@@ -47,22 +47,22 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                <Link href="/about" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Contact
                 </Link>
               </li>
@@ -73,17 +73,17 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Legal</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                <Link href="/privacy" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Privacy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Terms
                 </Link>
               </li>
               <li>
-                <Link href="/security" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-blue-600">
                   Security
                 </Link>
               </li>

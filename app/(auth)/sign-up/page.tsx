@@ -75,14 +75,16 @@ export default function SignUp() {
 
       <div className="w-full max-w-md relative z-10">
         {/* Logo/Brand */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-linear-to-br from-blue-600 to-purple-600 rounded-2xl mb-4 shadow-lg">
-            <Sparkles className="w-8 h-8 text-white" />
+        <Link href="/">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-linear-to-br from-blue-600 to-purple-600 rounded-2xl mb-4 shadow-lg">
+              <Sparkles className="w-8 h-8 text-white" />
+            </div>
+            <h1 className="text-3xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              SurveyPro
+            </h1>
           </div>
-          <h1 className="text-3xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            SurveyPro
-          </h1>
-        </div>
+        </Link>
 
         <Card className="border-none shadow-2xl backdrop-blur-sm bg-white/90">
           <CardHeader className="text-center space-y-2 pb-6">
@@ -233,11 +235,11 @@ export default function SignUp() {
             {/* Terms */}
             <p className="text-xs text-center text-gray-500 mt-4">
               By signing up, you agree to our{" "}
-              <Link href="/terms" className="text-purple-600 hover:underline">
+              <Link href="#" className="text-purple-600 hover:underline">
                 Terms of Service
               </Link>{" "}
               and{" "}
-              <Link href="/privacy" className="text-purple-600 hover:underline">
+              <Link href="#" className="text-purple-600 hover:underline">
                 Privacy Policy
               </Link>
             </p>
@@ -246,15 +248,15 @@ export default function SignUp() {
 
         {/* Footer Links */}
         <div className="mt-6 text-center text-sm text-gray-600">
-          <Link href="/privacy" className="hover:text-purple-600 mx-2">
+          <Link href="#" className="hover:text-purple-600 mx-2">
             Privacy
           </Link>
           <span>•</span>
-          <Link href="/terms" className="hover:text-purple-600 mx-2">
+          <Link href="#" className="hover:text-purple-600 mx-2">
             Terms
           </Link>
           <span>•</span>
-          <Link href="/help" className="hover:text-purple-600 mx-2">
+          <Link href="#" className="hover:text-purple-600 mx-2">
             Help
           </Link>
         </div>
